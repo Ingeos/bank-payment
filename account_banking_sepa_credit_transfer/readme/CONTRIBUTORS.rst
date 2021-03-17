@@ -10,3 +10,10 @@
 
   * Antonio Espinosa
   * Pedro M. Baeza
+  * Carlos Roca
+* `DynApps NV <https://www.dynapps.be>`_:
+
+  * Axel Priem <axel.priem@dynapps.be>
+* `Sygel Technology <https://www.sygel.es>`_:
+
+  * Valentin Vinagre <valentin.vinagre@sygel.es>
