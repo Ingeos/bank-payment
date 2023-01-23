@@ -6,13 +6,11 @@
 from datetime import date, timedelta
 
 from odoo.exceptions import UserError, ValidationError
-from odoo.tests import tagged
 from odoo.tests.common import Form
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
 
-@tagged("-at_install", "post_install")
 class TestPaymentOrderInboundBase(AccountTestInvoicingCommon):
     @classmethod
     def setUpClass(cls, chart_template_ref=None):
@@ -79,7 +77,6 @@ class TestPaymentOrderInboundBase(AccountTestInvoicingCommon):
         return invoice_form.save()
 
 
-@tagged("-at_install", "post_install")
 class TestPaymentOrderInbound(TestPaymentOrderInboundBase):
     def test_constrains_type(self):
         with self.assertRaises(ValidationError):
